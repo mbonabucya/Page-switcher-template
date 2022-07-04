@@ -69,7 +69,15 @@ main {
     border-radius: 18px;
     border: 1px solid var(--bg);
     padding: 20px;
+    background-color: var(--bg);
+}
 
+.pages .page {
+    display: none;
+}
+
+.pages .page.is-active {
+    display: block;
 }
 
 @media  screen and (max-width:768px) {
@@ -80,6 +88,5 @@ main {
         align-items:center;
         padding-left: 142px;
         width: 100%;
-      }
-    
+      }  
 }
