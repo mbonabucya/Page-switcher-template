@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&family=Poppins&display=swap');
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #fff;
+    --border: 1px solid rgb(11, 11, 11);
+    --blueish:#172b4d;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Poppins', sans-serif;
+  }
+
+body {
+
+    background-color: var(--blueish);
+  }
+
+header {
+    background-color: #fff;
+  }
+
+h2 {
+    color: var(--main-color);
+  }
+
+.tabs {
+    display: flex;
+    list-style: none;
+    align-items:center;
+    padding-left: 142px;
+    width: 100%;
+  }
+
+.tab {
+    color: var(--blueish);
+    padding: 20px;
+  }
+
+header nav .tabs .tab a[data-switcher] {
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+header nav .tabs .tab.is-active a[data-switcher] {
+    cursor: pointer;
+    font-size: 14px;
+    color: red;
+    font-weight: 700;
+  }
+
+header nav .tabs .tab:hover a[data-switcher] {
+    cursor: pointer;
+    font-size: 18px;
+    background-color: var(--main-color);
+  }
+
+main {
+    padding-left: 142px;
+    padding-right: 142px;
+}
+
+.pages{
+    margin-top: 126px;
+    border-radius: 18px;
+    border: 1px solid var(--bg);
+    padding: 20px;
+    background-color: var(--bg);
+}
+
+.pages .page {
+    display: none;
+}
+
+.pages .page.is-active {
+    display: block;
+}
+
+@media  screen and (max-width:768px) {
+    .tabs {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items:center;
+        padding-left: 142px;
+        width: 100%;
+      }  
+}
